@@ -22,7 +22,7 @@ The following attributes of the tweets should be extracted:
 *	Coordinates
 *	Retweet count
 *	Likes count
-*	User info
+*	User info:
 ..*	Username
 ..*	Screenname
 ..* Location
