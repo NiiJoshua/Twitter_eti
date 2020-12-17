@@ -1,5 +1,5 @@
 # Twitter Data extraction : Project overview
----
+
 This project is to extract data from Twitter, store the data in a csv format in a particular file name. The second part is to create a Mongodb Databases called **Tweets_db** and store the extracted tweets into a collection named: **raw_tweets**.
 
 ## Task
