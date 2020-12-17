@@ -69,15 +69,15 @@ supplementary files that helped me getaround the task
 
 ### Part 2 Creating to MongoDB database
 There are a number of ways to interact with mongo, using atlas,compass and also on out local machine. I had to work with my local machine so I installed mongodb using the terminal. 
-1. ## Install Hombrew
+1. #### Install Hombrew
 I already had homebrew installed on my machine so it was pretty straight forward installing mongodb but if you do not have homebrew intalled, follow [these steps](https://docs.brew.sh/Installation) to install.
 
-2. ## Install mongoDB locally
+2. #### Install mongoDB locally
 Follow these [steps](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/) to install mongodb locally
-3. ## Get started with Mongodb CRUD with python
+3. #### Get started with Mongodb CRUD with python
 
 Since I will be using python, I had to learn how to connect to mongo database. [Here](https://www.mongodb.com/blog/post/getting-started-with-python-and-mongodb) are the steps I followed to perform basic Create, Retreive, Update, and Delete (CRUD) operations using PyMongo
 
-4. ## Caveats
+4. #### Caveats
 I run into a problem when I was connecting to atlas which I want to point out. When you're experience ConnectionError, it can be an indication that PyMongo is not getting access to your database in Atlas. When this happens check the Database Access settings under Security and modify the authentcation method to SCRAM and MongoDB Roles to **readWriteAnyDatabase**@admin as shown in the image below
 ![alt text][Screenshot 2020-12-17 at 10.42.15 AM]
