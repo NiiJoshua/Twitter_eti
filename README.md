@@ -44,16 +44,22 @@ Create a MongoDB database called Tweets_db and store the extracted tweets into a
 
 ## Activities done
 ### Part 1 : Generating Twitter account keys
+
 1. #### Create a Twitter account
 To apply for Twitter developer key, you first of all need a Twitter account, if you do not have one, follow these steps to [create one](https://help.twitter.com/en/using-twitter/create-twitter-account)
+
 2. #### Apply for Twitter developer key
 The first thing I did was to apply for the Twitter developer key. This is not as straight forward as applying for the YouTube developer key. You're best chance is to apply as a hobbyist. This has a higher probability of your application getting approval. In some cases, it is instant, especially if your reason for applying is reasonable. Use [this link](https://developer.twitter.com/en/apply-for-access) to apply for access.
+
 3. #### Keep your credentials private
 When you finally get your credentials, its best to copy them and keep them safe.You will be presented with API_key, API_secret_key, Bearer_token, Access_token, and Access_token_secret. In writing the script, all will be needed but Bearer_token.
+
 4. #### Set-up your environment.
 The kind of environment to use is also key. There're a number of environments data engineers can deploy for this exercise. E.g, google colab, jupyter notebook, etc. I used jupyter notebook because I am conversant with it and also becuase all I do is saved on my local computer. For google colab, you'll need internet to create your workspace and to access your files. In situations where you have unstable internet, it delays execution of your project.
+
 5.  ### Install the necessary packages 
 By defualt, jyputer notebook doesn't come with pre-installed packages for interaction with Twitter backend. I had to install the Tweepy (pip install tweepy). Before installing these libraries, be sure to check your python version to aid installation of the appropriate client version. You can follow these [steps](https://www.toptal.com/python/twitter-data-mining-using-python) to help create an authentication object. 
+
 6. ### define your own module
 The next step I took was to hide my credentials by writing a script in my local container. I then imported the module in my script and call the credentials. There are others ways around but you have to find the way that best works for you.
 
