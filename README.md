@@ -81,3 +81,6 @@ Since I will be using python, I had to learn how to connect to mongo database. [
 4. #### Caveats
 I run into a problem when I was connecting to atlas which I want to point out. When you're experience ConnectionError, it can be an indication that PyMongo is not getting access to your database in Atlas. When this happens check the Database Access settings under Security and modify the authentcation method to SCRAM and MongoDB Roles to **readWriteAnyDatabase**@admin as shown in the image below
 ![Alt text](https://github.com/NiiJoshua/Twitter_eti/blob/main/Scram.png)
+
+The next thing to check is the IP address under Network Access. You have to change the IP address to 0.0.0.0/0 which will accept connection from any endpoing with your credenitals as shown below.
+![Alt text](
