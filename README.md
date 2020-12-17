@@ -76,11 +76,15 @@ I already had homebrew installed on my machine so it was pretty straight forward
 Follow these [steps](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/) to install mongodb locally
 3. #### Get started with Mongodb CRUD with python
 
-Since I will be using python, I had to learn how to connect to mongo database. [Here](https://www.mongodb.com/blog/post/getting-started-with-python-and-mongodb) are the steps I followed to perform basic Create, Retreive, Update, and Delete (CRUD) operations using PyMongo
+Since I will be using python, I had to learn how to connect to mongo database. [Here](https://www.mongodb.com/blog/post/getting-started-with-python-and-mongodb) are the steps I followed to perform basic Create, Retreive, Update, and Delete (CRUD) operations using PyMongo. This will take you through steps to create clusters, and admin settings
 
 4. #### Caveats
 I run into a problem when I was connecting to atlas which I want to point out. When you're experience ConnectionError, it can be an indication that PyMongo is not getting access to your database in Atlas. When this happens check the Database Access settings under Security and modify the authentcation method to SCRAM and MongoDB Roles to **readWriteAnyDatabase**@admin as shown in the image below
 ![Alt text](https://github.com/NiiJoshua/Twitter_eti/blob/main/Scram.png)
 
 The next thing to check is the IP address under Network Access. You have to change the IP address to 0.0.0.0/0 which will accept connection from any endpoing with your credenitals as shown below.
-![Alt text](
+![Alt text](https://github.com/NiiJoshua/Twitter_eti/blob/main/Screm.png)
+
+5. #### Inserting & viewing data
+After successfully connecting to my database with Pymongo, I ingested my csv file (shown in my script) into my collection. This can be seen in collections in my cluster but Compass is another way to view and interact with data. I installed compass and it enabled me see graph representation of my data. You have to be fammiliar with json if you want any perform CRUD operation
+
