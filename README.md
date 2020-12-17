@@ -16,14 +16,14 @@ And returns a csv file with the following naming format:
 tweets_downloaded_yymmdd_hhmmss.csv (where ‘yymmdd_hhmmss’ is the current 	timestamp)     
 
 The following attributes of the tweets should be extracted:
-*	Tweet text
-*	Tweet id
+* Tweet text
+* Tweet id
 *	Source
 *	Coordinates
 *	Retweet count
 *	Likes count
 *	User info:
-..*	Username
+..*Username
 ..*	Screenname
 ..* Location
 ..*	Friends count
@@ -34,5 +34,6 @@ The following attributes of the tweets should be extracted:
 ## Code and resources used
 **Python version** : 3.6
 **Packages** : json, pandas, tweepy, mongo db
+**OS** : macOS Catalina
 **Exteral client packages** mongo Atlas, mongo Compass
 **Web Framework**: virtualenv, requirements.txt
