@@ -57,10 +57,10 @@ When you finally get your credentials, its best to copy them and keep them safe.
 4. #### Set-up your environment.
 The kind of environment to use is also key. There're a number of environments data engineers can deploy for this exercise. E.g, google colab, jupyter notebook, etc. I used jupyter notebook because I am conversant with it and also becuase all I do is saved on my local computer. For google colab, you'll need internet to create your workspace and to access your files. In situations where you have unstable internet, it delays execution of your project.
 
-5.  ### Install the necessary packages 
+5.  #### Install the necessary packages 
 By defualt, jyputer notebook doesn't come with pre-installed packages for interaction with Twitter backend. I had to install the Tweepy (pip install tweepy). Before installing these libraries, be sure to check your python version to aid installation of the appropriate client version. You can follow these [steps](https://www.toptal.com/python/twitter-data-mining-using-python) to help create an authentication object. 
 
-6. ### define your own module
+6. #### define your own module
 The next step I took was to hide my credentials by writing a script in my local container. I then imported the module in my script and call the credentials. There are others ways around but you have to find the way that best works for you.
 
 supplementary files that helped me getaround the task
@@ -71,10 +71,13 @@ supplementary files that helped me getaround the task
 There are a number of ways to interact with mongo, using atlas,compass and also on out local machine. I had to work with my local machine so I installed mongodb using the terminal. 
 1. ## Install Hombrew
 I already had homebrew installed on my machine so it was pretty straight forward installing mongodb but if you do not have homebrew intalled, follow [these steps](https://docs.brew.sh/Installation) to install.
+
 2. ## Install mongoDB locally
 Follow these [steps](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/) to install mongodb locally
 3. ## Get started with Mongodb CRUD with python
+
 Since I will be using python, I had to learn how to connect to mongo database. [Here](https://www.mongodb.com/blog/post/getting-started-with-python-and-mongodb) are the steps I followed to perform basic Create, Retreive, Update, and Delete (CRUD) operations using PyMongo
+
 4. ## Caveats
 I run into a problem when I was connecting to atlas which I want to point out. When you're experience ConnectionError, it can be an indication that PyMongo is not getting access to your database in Atlas. When this happens check the Database Access settings under Security and modify the authentcation method to SCRAM and MongoDB Roles to **readWriteAnyDatabase**@admin as shown in the image below
 ![alt text][Screenshot 2020-12-17 at 10.42.15 AM]
