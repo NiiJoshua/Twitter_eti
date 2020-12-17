@@ -23,13 +23,13 @@ The following attributes of the tweets should be extracted:
 *	Retweet count
 *	Likes count
 *	User info:
- ..* Username
- ..*	Screenname
- ..* Location
- ..*	Friends count
- ..*	Verification status
- ..*	Description
- ..*	Followers count
+ - Username
+ +	Screenname
+ + Location
+ -	Friends count
+ - Verification status
+ +	Description
+ +	Followers count
 
 ## Code and resources used
 **Python version** : 3.6
